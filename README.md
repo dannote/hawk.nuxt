@@ -1,41 +1,26 @@
-<!--
-Get your module up and running quickly.
-
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: My Module
-- Package name: my-module
-- Description: My new Nuxt module
--->
-
-# My Module
+# @hawk.so/nuxt
 
 [![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-My new Nuxt module for doing amazing things.
-
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/my-module?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+[Hawk](https://hawk.so) error tracker integration to Nuxt app
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- ⛰ Easy installation
+- 🚠 Tracking errors across your Nuxt App
+- 🌲 Composable for manual sending erros and logs
 
 ## Quick Setup
 
-Install the module to your Nuxt application with one command:
+Install the module with one command:
 
 ```bash
-npx nuxi module add my-module
+npx nuxi module add @hawk.so/nuxt
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+That's it! You can now use Hawk Nuxt in your Nuxt app ✨
 
 
 ## Contribution
@@ -71,14 +56,11 @@ That's it! You can now use My Module in your Nuxt app ✨
 
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/my-module
+[npm-version-src]: https://img.shields.io/npm/v/@hawk.so/nuxt/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-href]: https://npmjs.com/package/@hawk.so/nuxt
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npmjs.com/package/my-module
-
-[license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/my-module
+[license-src]: https://img.shields.io/npm/l/@hawk.so/nuxt.svg?style=flat&colorA=020420&colorB=00DC82
+[license-href]: https://npmjs.com/package/@hawk.so/nuxt
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
