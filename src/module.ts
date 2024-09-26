@@ -1,14 +1,7 @@
 import { defineNuxtModule, addPlugin, createResolver, updateRuntimeConfig, useRuntimeConfig, addImportsDir } from '@nuxt/kit'
+import type { HawkModuleConfig } from './types'
 
-// Module options TypeScript interface definition
-export interface ModuleOptions {
-  /**
-   * Hawk Integration token
-   */
-  token: string
-}
-
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule<HawkModuleConfig>({
   meta: {
     name: '@hawk.so/nuxt',
     configKey: 'hawk',

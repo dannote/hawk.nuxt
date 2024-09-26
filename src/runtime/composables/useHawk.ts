@@ -1,3 +1,4 @@
+import type Catcher from '@hawk.so/javascript'
 import {
   useNuxtApp,
 } from '#imports'
@@ -5,8 +6,10 @@ import {
 export default function useHawk() {
   const { $hawk } = useNuxtApp()
 
+  const hawkInstance = $hawk as Catcher
+
   function send(message: string | Error) {
-    $hawk.send(message)
+    hawkInstance.send(message)
   }
 
   return {

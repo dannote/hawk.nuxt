@@ -20,7 +20,19 @@ Install the module with one command:
 npx nuxi module add @hawk.so/nuxt
 ```
 
-That's it! You can now use Hawk Nuxt in your Nuxt app ✨
+Then connect and configure to your `nuxt.config.ts`. Pass there an Integration Token you got from Hawk project. 
+You can pass it directly or use .env file wich is supported by Nuxt out of the box.
+
+```ts
+export default defineNuxtConfig({
+  modules: [
+    '@hawk.so/nuxt'
+  ],
+  hawk: {
+    tokenClient: process.env.HAWK_TOKEN_CLIENT,
+  },
+})
+```
 
 
 ## Contribution
