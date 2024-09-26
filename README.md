@@ -8,9 +8,9 @@
 
 ## Features
 
-- ⛰ Easy installation
-- 🚠 Tracking errors across your Nuxt App
-- 🌲 Composable for manual sending erros and logs
+- 😋 Effortless installation
+- 🦅 Track errors seamlessly across your Nuxt app
+- 💼 Composable for manually sending errors and logs
 
 ## Quick Setup
 
@@ -34,13 +34,12 @@ export default defineNuxtConfig({
 })
 ```
 
-
 ## Contribution
 
 <details>
   <summary>Local development</summary>
 
-  Copy .env.example to the .env file in /playground. Put Hawk Integration Token in there.
+  <p>Copy .env.example to the .env file in /playground. Put Hawk Integration Token in there.</p>
   
   ```bash
   # Install dependencies
