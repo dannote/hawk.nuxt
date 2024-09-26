@@ -2,7 +2,7 @@
   "name": "@hawk.so/nuxt",
   "version": "0.0.1",
   "description": "Hawk error tracker integration to Nuxt app",
-  "repository": "your-org/@hawk.so/nuxt",
+  "repository": "https://github.com/codex-team/hawk.nuxt",
   "license": "MIT",
   "type": "module",
   "exports": {
