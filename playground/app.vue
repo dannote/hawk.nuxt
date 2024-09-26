@@ -22,7 +22,7 @@ function triggerException() {
 }
 
 function manuallyFromComposable() {
-  something.send(new Error('Error sent manually from composable'))
+  something.testManualSendingFromComposable(new Error('Error sent manually from composable'))
 }
 </script>
 
