@@ -27,6 +27,8 @@ That's it! You can now use Hawk Nuxt in your Nuxt app ✨
 
 <details>
   <summary>Local development</summary>
+
+  Copy .env.example to the .env file in /playground. Put Hawk Integration Token in there.
   
   ```bash
   # Install dependencies
