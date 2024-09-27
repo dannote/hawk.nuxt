@@ -4,7 +4,7 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-[Hawk](https://hawk.so) error tracker integration to Nuxt app
+[Hawk](https://hawk.so) error tracker integration for Nuxt app
 
 ## Features
 
