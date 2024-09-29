@@ -1,7 +1,16 @@
 export default defineNuxtConfig({
+  // sourcemap: {
+  //   client: 'hidden',
+  //   server: 'hidden',
+  // },
+  // vite: {
+  //   build: {
+  //     sourcemap: 'inline',
+  //   },
+  // },
   modules: ['../src/module'],
   hawk: {
-    tokenClient: process.env.HAWK_TOKEN_CLIENT,
+    token: process.env.HAWK_TOKEN,
   },
   devtools: { enabled: true },
 })
