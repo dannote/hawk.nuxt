@@ -3,7 +3,7 @@
  */
 export interface HawkModuleConfig {
   /**
-   * Hawk Integration token for client-side errors
+   * Hawk Integration token
    */
-  tokenClient: string
+  token: string
 }

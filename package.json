@@ -1,6 +1,6 @@
 {
   "name": "@hawk.so/nuxt",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Hawk error tracker integration to Nuxt app",
   "repository": "https://github.com/codex-team/hawk.nuxt",
   "license": "MIT",
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@hawk.so/javascript": "^3.0.2",
+    "@hawk.so/vite-plugin": "^1.0.3",
     "@nuxt/kit": "^3.13.2"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 import { defineNuxtModule, addPlugin, createResolver, updateRuntimeConfig, useRuntimeConfig, addImportsDir } from '@nuxt/kit'
+import hawkVitePlugin from '@hawk.so/vite-plugin'
 import type { HawkModuleConfig } from './types'
 
 export default defineNuxtModule<HawkModuleConfig>({
@@ -6,9 +7,8 @@ export default defineNuxtModule<HawkModuleConfig>({
     name: '@hawk.so/nuxt',
     configKey: 'hawk',
   },
-  // Default configuration options of the Nuxt module
   defaults: {},
-  setup(config, _nuxt) {
+  setup(config, nuxt) {
     const resolver = createResolver(import.meta.url)
     const runtimeConfig = useRuntimeConfig()
 
@@ -32,5 +32,18 @@ export default defineNuxtModule<HawkModuleConfig>({
     })
 
     addImportsDir(resolver.resolve('./runtime/composables'))
+
+    /**
+     * Add @hawk.so/vite-plugin for source maps sending
+     */
+    nuxt.hook('vite:extendConfig', (viteConfig) => {
+      viteConfig.plugins = viteConfig.plugins || []
+
+      viteConfig.plugins.push(
+        hawkVitePlugin({
+          token: config.token,
+        }),
+      )
+    })
   },
 })

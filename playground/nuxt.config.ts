@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
   hawk: {
-    tokenClient: process.env.HAWK_TOKEN_CLIENT,
+    token: process.env.HAWK_TOKEN,
   },
   devtools: { enabled: true },
 })

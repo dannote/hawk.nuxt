@@ -11,6 +11,7 @@
 - 😋 Effortless installation
 - 🦅 Track errors seamlessly across your Nuxt app
 - 💼 Composable for manually sending errors and logs
+- 💌 Sends release info with source maps
 
 ## Quick Setup
 
@@ -29,7 +30,7 @@ export default defineNuxtConfig({
     '@hawk.so/nuxt'
   ],
   hawk: {
-    tokenClient: process.env.HAWK_TOKEN_CLIENT,
+    token: process.env.HAWK_TOKEN,
   },
 })
 ```
