@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     token: process.env.HAWK_TOKEN,
     catcherOptions: {
       context: {
-        appName: 'Hawk Nuxt Playgorund',
+        appName: 'Hawk Nuxt Playground',
       },
       beforeSend: (event) => {
         event.context.appVersion = '1.0.0'
