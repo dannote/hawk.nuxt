@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@hawk.so/javascript": "^3.0.2",
-    "@hawk.so/vite-plugin": "^1.0.3",
+    "@hawk.so/vite-plugin": "^1.0.4",
     "@nuxt/kit": "^3.13.2"
   },
   "devDependencies": {

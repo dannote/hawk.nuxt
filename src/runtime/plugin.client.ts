@@ -1,5 +1,6 @@
 import HawkCatcher from '@hawk.so/javascript'
 import type { HawkModuleConfig } from '../types'
+import beforeSend from '#build/hawk-before-send.mjs'
 import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 
 /**
@@ -30,11 +31,13 @@ export default defineNuxtPlugin((nuxtApp) => {
   const runtimeConfig = useRuntimeConfig()
   const hawkConfig = runtimeConfig.public.hawk as HawkModuleConfig
 
-  const hawkInstance = new HawkCatcher({
+  const hawkInstance = new HawkCatcher(Object.assign({}, hawkConfig.catcherOptions, {
     token: hawkConfig.token,
     vue: nuxtApp.vueApp,
     release: getReleaseId(),
-  })
+  }, {
+    beforeSend,
+  }))
 
   /**
    * @todo use NuxtApp to extract useful information:
