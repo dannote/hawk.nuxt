@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 
 ## Passing additional options
 
-You can pass `user`, `context`, `beforeSend` and other JS Catcher options via `catcherOptions` config property.
+You can pass `user`, `context`, `beforeSend` and other [JS Catcher options](https://github.com/codex-team/hawk.javascript?tab=readme-ov-file#usage) via `catcherOptions` config property.
 
 ```ts
 export default defineNuxtConfig({
