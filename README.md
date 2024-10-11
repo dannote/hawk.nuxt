@@ -50,7 +50,7 @@ export default defineNuxtConfig({
     catcherOptions: {
       context: {
         // any data you want to send with all events
-        appName: 'Hawk Nuxt Playgorund',
+        appName: 'Hawk Nuxt Playground',
       },
       // method for filtering/modifying a sending event
       beforeSend: (event) => {
