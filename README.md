@@ -52,7 +52,7 @@ export default defineNuxtConfig({
         // any data you want to send with all events
         appName: 'Hawk Nuxt Playground',
       },
-      // method for filtering/modifying a sending event
+      // method for filtering/modifying an event to be sent
       beforeSend: (event) => {
         event.context.appVersion = '1.0.0'
 
