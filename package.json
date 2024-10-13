@@ -1,6 +1,6 @@
 {
   "name": "@hawk.so/nuxt",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Hawk error tracker integration to Nuxt app",
   "repository": {
     "type": "git",
