@@ -1,8 +1,11 @@
 {
   "name": "@hawk.so/nuxt",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Hawk error tracker integration to Nuxt app",
-  "repository": "https://github.com/codex-team/hawk.nuxt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codex-team/hawk.nuxt.git"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -19,15 +22,16 @@
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
+    "build": "yarn run prepack",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "yarn run lint && yarn run test && yarn run prepack && changelogen --release && yarn publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit",
-    "preinstall": "npx only-allow npm"
+    "preinstall": "npx only-allow yarn"
   },
   "dependencies": {
     "@hawk.so/javascript": "^3.0.8",
