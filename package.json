@@ -26,10 +26,11 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
+    "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit",
+    "preinstall": "npx only-allow npm"
   },
   "dependencies": {
-    "@hawk.so/javascript": "^3.0.2",
+    "@hawk.so/javascript": "^3.0.8",
     "@hawk.so/vite-plugin": "^1.0.4",
     "@nuxt/kit": "^3.13.2"
   },

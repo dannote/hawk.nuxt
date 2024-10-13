@@ -1,3 +1,5 @@
+import type { HawkJavaScriptEvent } from '@hawk.so/javascript'
+
 export default defineNuxtConfig({
   modules: ['../src/module'],
 
@@ -7,7 +9,7 @@ export default defineNuxtConfig({
       context: {
         appName: 'Hawk Nuxt Playground',
       },
-      beforeSend: (event) => {
+      beforeSend: (event: HawkJavaScriptEvent) => {
         event.context.appVersion = '1.0.0'
 
         return event
