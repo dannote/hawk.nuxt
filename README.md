@@ -35,6 +35,34 @@ export default defineNuxtConfig({
 })
 ```
 
+## Passing additional options
+
+You can pass `user`, `context`, `beforeSend` and other [JS Catcher options](https://github.com/codex-team/hawk.javascript?tab=readme-ov-file#usage) via `catcherOptions` config property.
+
+```ts
+export default defineNuxtConfig({
+  modules: [
+    '@hawk.so/nuxt'
+  ],
+
+  hawk: {
+    token: process.env.HAWK_TOKEN,
+    catcherOptions: {
+      context: {
+        // any data you want to send with all events
+        appName: 'Hawk Nuxt Playground',
+      },
+      // method for filtering/modifying an event to be sent
+      beforeSend: (event) => {
+        event.context.appVersion = '1.0.0'
+
+        return event
+      },
+    },
+  },
+})
+```
+
 ## Contribution
 
 <details>
