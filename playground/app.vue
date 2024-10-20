@@ -7,6 +7,11 @@
         Trigger exception
       </button>
 
+      <TheButton
+        text="Trigger exception from component"
+        @activate="componentEventHandler"
+      />
+
       <button @click="manuallyFromComposable">
         Manually send from useSomething() composable
       </button>
@@ -15,6 +20,8 @@
 </template>
 
 <script setup lang="ts">
+import TheButton from '~/components/UiButton.vue'
+
 const something = useSomething()
 
 function triggerException() {
@@ -23,6 +30,10 @@ function triggerException() {
 
 function manuallyFromComposable() {
   something.testManualSendingFromComposable(new Error('Error sent manually from composable'))
+}
+
+function componentEventHandler() {
+  return erererer.bb
 }
 </script>
 
