@@ -953,10 +953,10 @@
   resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
   integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
-"@hawk.so/javascript@^3.1.0-rc.0":
-  version "3.1.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@hawk.so/javascript/-/javascript-3.1.0-rc.0.tgz#1a5b8559cf6e36e3ebdbbcde692952d7501fea0b"
-  integrity sha512-dcHJN1qP4EJr0K4F5yNmpQtf1QFgE7WqEMr8RzxNjeflfTGOdQxAI3Cl+4vBfiQ7AYxkpldQGxepkAFzUfmL+g==
+"@hawk.so/javascript@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@hawk.so/javascript/-/javascript-3.1.0.tgz#5423bf1b31aec50b83e41ff74cb2e1ae55c06e17"
+  integrity sha512-J0r4UgwX1FBM72HVppQlssy9DqK5eCFnExFtRwl0EcGa8pr+xt7AAMEPN+lT3fa7hyrjXLUQpJ1+MIQUE7i4bQ==
   dependencies:
     "@hawk.so/types" "^0.1.20"
     error-stack-parser "^2.1.4"
