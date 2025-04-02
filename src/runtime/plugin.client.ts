@@ -1,5 +1,5 @@
-// import HawkCatcher from '@hawk.so/javascript'
-import HawkCatcher, { type NuxtIntegrationData, type NuxtIntegrationAddons } from '../../../hawk.javascript'
+import HawkCatcher from '@hawk.so/javascript'
+// import HawkCatcher, { type NuxtIntegrationData, type NuxtIntegrationAddons } from '../../../hawk.javascript'
 import type { HawkModuleConfig } from '../types'
 import beforeSend from '#build/hawk-before-send.mjs'
 import { defineNuxtPlugin, useRuntimeConfig } from '#app'
