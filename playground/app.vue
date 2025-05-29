@@ -7,6 +7,10 @@
         Trigger exception
       </button>
 
+      <button @click="triggerServerError">
+        Trigger server error
+      </button>
+
       <TheButton
         text="Trigger exception from component"
         @activate="componentEventHandler"
@@ -26,6 +30,10 @@ const something = useSomething()
 
 function triggerException() {
   throw new Error('This is an exception')
+}
+
+async function triggerServerError() {
+  await $fetch('/api/do-something')
 }
 
 function manuallyFromComposable() {

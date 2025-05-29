@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, updateRuntimeConfig, useRuntimeConfig, addImportsDir, addTemplate } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, addServerPlugin, createResolver, updateRuntimeConfig, useRuntimeConfig, addImportsDir, addTemplate } from '@nuxt/kit'
 import hawkVitePlugin from '@hawk.so/vite-plugin'
 import type { HawkModuleConfig } from './types'
 
@@ -47,6 +47,8 @@ export default defineNuxtModule<HawkModuleConfig>({
       src: resolver.resolve('./runtime/plugin.client'),
       mode: 'client',
     })
+
+    addServerPlugin(resolver.resolve('./runtime/plugin.server'))
 
     addImportsDir(resolver.resolve('./runtime/composables'))
 
